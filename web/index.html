@@ -10,7 +10,7 @@
 </head>
 
 <body tabindex="1">
-    <div id="pdf" style="height: 98vh;"></div>
+    <div id="outerContainer" style="height: 98vh;"></div>
     <script>
         let options = {
             pdfOpenParams: {
@@ -27,7 +27,7 @@
         };
         // let file = 'http://192.168.6.81:8007/Storage/Files/2021/12/07/202112071230482162-5b50c5028205944be0a7f802729b46bb_searchable.pdf';
         let file = 'https://pdfobject.com/pdf/sample-3pp.pdf';
-        PDFObject.embed(file, "#pdf", options);
+        PDFObject.embed(file, "#outerContainer", options);
     </script>
 </body>
 
